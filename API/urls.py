@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import AddCategoryEndpoint, CategoryListEndpoint,ProductsEndpoint
+from .views import AddCategoryEndpoint, CategoryListEndpoint, ProductsAddListEndpoint
 
 urlpatterns = [
-    path('add/categories', AddCategoryEndpoint.as_view(), name="add_cate"),
     path('categories', CategoryListEndpoint.as_view(), name="category"),
-    path('products', ProductsEndpoint.as_view(), name="products"),
+    path('add/categories', AddCategoryEndpoint.as_view(), name="add-cate"),
+    path('products', ProductsAddListEndpoint.as_view(), name="products"),
 ]
