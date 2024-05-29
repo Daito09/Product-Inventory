@@ -1,5 +1,5 @@
 asgiref==3.8.1
-chatterbot-corpus==1.2.0
+# chatterbot-corpus==1.2.0
 distlib==0.3.8
 dj-database-url==2.2.0
 Django==4.2.4
